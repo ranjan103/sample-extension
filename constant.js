@@ -4,4 +4,4 @@ const constants = {
   url: "https://www.yelp.com/search?find_desc=Italian+Restaurants&find_loc=${location}&start=${pageCounter}",
 };
 
-module.exports = { constants };
+export default { constants };
