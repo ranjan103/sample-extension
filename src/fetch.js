@@ -58,4 +58,4 @@ async function scrapeYelp()  {
   return restaurants;
 };
 
-// module.exports = { scrapeYelp };
+module.exports = { scrapeYelp };
