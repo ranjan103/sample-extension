@@ -47,6 +47,16 @@ async function scrapeYelp()  {
     pageCounter++;
   }
 
+  // Saving the result.csv file
+  document.getElementById('search').addEventListener('click', async () => {
+    const link = document.createElement('a');
+    link.href = './result.csv';
+    link.download = 'result.csv';
+    link.innerHTML = 'Download CSV';
+    document.getElementById('result').appendChild(link);
+    console.log(result)
+  });
+
   // Close the browser
   await browser.close();
 
@@ -58,4 +68,4 @@ async function scrapeYelp()  {
   return restaurants;
 };
 
-module.exports = { scrapeYelp };
+export default { scrapeYelp };
