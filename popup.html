@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Restraurant Search</title>
+    <script type="module" src="./src/fetch.js">
+    </script>
+  </head>
+  <body>
+    <input type="text" id="location" placeholder="Enter location"></input>
+    <input type="button" id="search" onclick="scrapeYelp()" value="Search"></input>
+    <div id="result"></div>
+  </body>
+</html>
+
+
+<!-- <script>
+      console.log("Running fetch.js");
+      document.getElementById('search').addEventListener('click', async () => {
+        const link = document.createElement('a');
+        link.href = './result.csv';
+        link.download = 'result.csv';
+        link.innerHTML = 'Download CSV';
+        document.getElementById('result').appendChild(link);
+        console.log(result)
+      }); -->
+    <!-- </script> -->

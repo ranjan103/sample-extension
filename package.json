@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "jsdom": "^21.0.0",
+    "path-fixxer": "^0.3.2",
+    "puppeteer": "^19.5.2"
+  },
+  "name": "fetch",
+  "version": "1.0.0",
+  "main": "fetch.js",
+  "devDependencies": {
+    "mocha": "^9.1.2"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "cd ./src && node fetch.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
